@@ -1,6 +1,5 @@
 @import "filme.css";
 
-/* Diferencial da página de série: selo com contorno rosa */
 .selo { background: transparent; border: 1px solid var(--rosa); color: var(--rosa); }
 
 .detalhe { background: linear-gradient(90deg, #22141d, var(--bg)); }

@@ -1,6 +1,5 @@
 @import "base.css";
 
-/* Filme em destaque: ocupa toda a largura da página */
 .destaque {
   width: 100%;
   min-height: 340px;
@@ -30,7 +29,6 @@
 
 .botao:hover { opacity: 0.85; }
 
-/* Top 3 com número sobreposto */
 .top-item { position: relative; padding-left: 45px; }
 
 .numero {
