@@ -1,0 +1,6 @@
+@import "base.css";
+
+/* Grade 3x4 (3 colunas, 12 filmes) */
+.grade { grid-template-columns: repeat(3, 1fr); row-gap: 28px; }
+
+.titulo { border-left: 4px solid var(--rosa); padding-left: 12px; }

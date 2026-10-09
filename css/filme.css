@@ -1,0 +1,86 @@
+@import "base.css";
+
+.detalhe {
+  display: flex;
+  gap: 30px;
+  background: linear-gradient(90deg, var(--bg2), var(--bg));
+  padding: 25px;
+  border-radius: 14px;
+}
+
+.poster { width: 240px; height: 360px; object-fit: cover; border-radius: 12px; }
+
+.info { flex: 1; }
+
+.info h1 { font-size: 36px; margin-bottom: 10px; }
+
+.info p { margin-bottom: 10px; font-size: 14px; }
+
+.meta { color: var(--cinza); }
+
+.selo {
+  display: inline-block;
+  background: var(--rosa);
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.sinopse { color: #ccc; line-height: 1.6; }
+
+.acoes { display: flex; gap: 12px; margin-top: 15px; }
+
+.botao {
+  background: var(--rosa);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.botao-sec {
+  background: var(--bg2);
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid var(--rosa);
+}
+
+.botao:hover, .botao-sec:hover { opacity: 0.85; }
+
+/* Comentários */
+.comentarios {
+  position: relative;
+  margin-top: 30px;
+  background: var(--bg2);
+  padding: 25px;
+  border-radius: 14px;
+}
+
+.aviso { color: var(--rosa); font-size: 14px; margin-bottom: 12px; }
+
+.comentarios textarea {
+  display: block;
+  width: 60%;
+  height: 90px;
+  background: var(--bg);
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 10px;
+  resize: none;
+  font-family: Arial, sans-serif;
+}
+
+.comentarios button {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: var(--rosa);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.vazio { position: absolute; top: 28px; right: 25px; color: var(--cinza); font-size: 14px; }

@@ -1,0 +1,6 @@
+@import "base.css";
+
+/* Grade de 12 séries (3 colunas x 4 linhas) */
+.grade { grid-template-columns: repeat(3, 1fr); row-gap: 28px; }
+
+.titulo { border-left: 4px solid var(--rosa); padding-left: 12px; }

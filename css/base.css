@@ -1,0 +1,104 @@
+:root {
+  --bg: #0f1115;
+  --bg2: #1a1c23;
+  --rosa: #ff2d8f;
+  --texto: #f1f1f1;
+  --cinza: #9a9aa5;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { background: var(--bg); color: var(--texto); font-family: Arial, sans-serif; }
+
+a { color: inherit; text-decoration: none; }
+
+/* ---------- MENU ---------- */
+header { background: #0b0c10; }
+
+.menu {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 0;
+}
+
+.logo svg { height: 32px; display: block; }
+
+nav { display: flex; gap: 10px; flex: 1; }
+
+nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  color: var(--cinza);
+}
+
+nav a:hover, nav a.ativo { background: var(--bg2); color: #fff; }
+
+nav a:hover svg, nav a.ativo svg { stroke: var(--rosa); }
+
+nav svg, .busca svg {
+  width: 20px; height: 20px;
+  fill: none; stroke: currentColor; stroke-width: 2;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+
+.busca {
+  display: flex; align-items: center; gap: 6px;
+  background: var(--bg2); border-radius: 8px; padding: 6px 10px;
+}
+
+.busca input { background: none; border: none; outline: none; color: #fff; width: 130px; }
+
+.busca button { background: none; border: none; color: #fff; cursor: pointer; display: flex; }
+
+/* ---------- CONTEÚDO ---------- */
+.container { max-width: 1000px; margin: 0 auto; padding: 30px 0 0; }
+
+.titulo { font-size: 28px; font-weight: normal; margin-bottom: 20px; }
+
+.titulo span { color: var(--rosa); }
+
+.grade { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+.card { display: block; }
+
+.card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  border: 2px solid transparent;
+}
+
+.card:hover img { border-color: var(--rosa); }
+
+.card h3 {
+  font-size: 15px; font-weight: normal; margin-top: 8px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+.card p { font-size: 12px; color: var(--cinza); margin-top: 4px; }
+
+.ver-mais { display: inline-block; margin-top: 20px; color: var(--rosa); }
+
+.ver-mais:hover { text-decoration: underline; }
+
+/* ---------- RODAPÉ ---------- */
+footer {
+  background: #0b0c10;
+  margin-top: 50px;
+  padding: 25px 0;
+  text-align: center;
+  color: var(--cinza);
+  font-size: 14px;
+}
+
+footer .parceiros { margin-top: 10px; }
+
+footer .parceiros a { color: var(--rosa); margin: 0 8px; }
